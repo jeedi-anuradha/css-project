@@ -550,7 +550,7 @@
     border-radius: 40px;
     outline: none;
 }
-.section-1 input::placeholder{
+.section-1>input::placeholder{
     color:#3b3b3b;
     font-weight: 100;
 }
