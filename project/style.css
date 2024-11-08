@@ -256,6 +256,18 @@
     border: 2px solid #4a4949;
     color: #4a4949;
 }
+@media screen and (width <= 768px){
+    .item1 h1{
+        font-size: 1.3rem;
+    }
+    .item1 h2{
+        font-size: 1.5rem;
+    }
+    .item2 img{
+        width: 280px;
+        padding-right: 30px;
+    }
+}
 /* coffees section */
 .coffee-heading{
     text-align: center;
@@ -326,9 +338,12 @@
     background-color: #f01c1c;
     color: #fefefd;
 }
-@media screen and (max-width : 1000px){
+@media screen and (width <= 768px){
     .arrows{
         display: none;
+    }
+    .coffee-heading h1{
+        font-size: 1.5rem;
     }
 }
 /* customer container */
@@ -417,6 +432,7 @@
         display: none;
     }
 }
+/* blog-container */
 .blog-heading{
     padding:60px 0px 60px 70px;
     font-size: 2rem;
@@ -504,6 +520,84 @@
         font-size: 30px;
     }
 } 
+.contact{
+    padding:80px 0px 0px;
+
+}
+.section-1{
+    text-align: center;
+    display:flex;
+    flex-flow: column wrap;
+    /* gap: 20px; */
+    width: 500px;
+    position: relative;
+    left:30%;
+}
+.section-1>h1{
+ padding-bottom: 40px;
+ text-align: center;
+ color: #252525;
+ font-weight: 900;
+}
+.section-1 input{
+    color: #000;
+    margin: 20px 0px 0px;
+    padding: 11px 20px;
+    font-size: 20px;
+    background-color: #efefef;
+    border:0px;
+    border-radius: 40px;
+    outline: none;
+}
+input::placeholder{
+    color:#3b3b3b;
+    font-weight: 100;
+}
+.section-1>.msg{
+    font-size: 20px;
+    margin: 20px 0 0;
+    padding: 40px 20px 0;
+    border: 0;
+    border-radius: 40px;
+    background-color: #efefef;
+    outline: none;
+}
+.msg::placeholder{
+    color: #3b3b3b;
+}
+.section-1 .submit{
+    width: 30%;
+    color: #3b3b3b;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.submit:hover{
+    background-color: #f01c1c;
+    color: #efeffd;
+}
+@media screen and (width <= 768px){
+    .contact>.section-1{
+        position: relative;
+        left: 0;
+        width: 300px;
+        padding: 0px 20px;
+
+    }
+    .section-1 h1{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .section-1>input,.msg{
+     width: 300px;    
+    }
+    
+}
+
+
+
 
 
 
